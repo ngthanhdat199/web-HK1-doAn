@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Quicksand&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/Style.css" />
+      <link rel="stylesheet" href="./css/responsive.css" />
+      <link
+         rel="stylesheet"
+         href="./img/fontawesome-free-5.12.1-web/css/all.css"
+      />
+      <script src="./src/validator.js"></script>
+      <link rel="SHORTCUT ICON" href="./img/logo/logo.png" />
+      <title>TechW</title>
+      <link rel="stylesheet" href="./css/order.css" />
+   </head>
+
+   <body>
+      <header>
+         <div class="nav">
+            <ul class="nav-list">
+               <li><a href="./index.html">Trang chủ</a></li>
+               <i class="fas fa-chevron-down"></i>
+               <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+               <li><a href="#footer">Liên Hệ</a></li>
+            </ul>
+            <div class="login-register">
+               <a href="#" class="js-login">Đăng Nhập</a>|<a
+                  href="#"
+                  class="js-register"
+                  >Đăng Ký</a
+               >
+            </div>
+         </div>
+         <div class="sub-header">
+            <a href="">
+               <img
+                  src="./img/logo/logo.png"
+                  alt="logotrang"
+                  style="width: 110px; height: 84px;"
+               />
+            </a>
+            <span class="sign">TECHW</span>
+            <i class="slogan"
+               >Mua sắm thả ga! Sale hết ăn tết!</i
+            >
+         </div>
+         <div class="nav-content">
+            <ul class="nav-content-list">
+               <li><a href="#" typeproduct="Iphone">Iphone</a></li>
+               <li><a href="#" typeproduct="Samsung">Samsung</a></li>
+               <li><a href="#" typeproduct="Vivo">Vivo</a></li>
+               <li><a href="#" typeproduct="Realme">Realme</a></li>
+               <li><a href="#" typeproduct="OPPO">OPPO</a></li>
+            </ul>
+            <div class="search">
+               <input
+                  class="search-ip"
+                  type="text"
+                  placeholder="Bạn muốn mua gì ?"
+               />
+               <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="cart-icon">
+               <a href="#" onclick="openModal($('.cart'))">
+                  Giỏ Hàng
+                  <i class="fas fa-shopping-cart"></i>
+               </a>
+            </div>
+         </div>
+      </header>
+      <div class="content">
+         <p>
+            Do ảnh hưởng của dịch Covid-19, một số khu vực có thể nhận hàng chậm
+            hơn dự kiến. TechW đang nỗ lực giao các đơn hàng trong thời gian
+            sớm nhất. Cám ơn sự thông cảm của quý khách!
+         </p>
+         <div class="content-container">
+            <div class="content-container-header">
+               <h3>Đơn hàng</h3>
+               <ul></ul>
+               <br />
+               <h4 class="total-price">Thành tiền: 900 000 đ</h4>
+            </div>
+            <div class="content-container-body">
+               <h3>Thông tin giao hàng</h3>
+               <form class="form-order">
+                  <div class="form-group">
+                     <label for="">
+                        <h4>Hình thức giao hàng</h4>
+                     </label>
+                     <div class="order-type">
+                        <input
+                           class="form-input"
+                           type="radio"
+                           name="order-type"
+                           value="save"
+                        />
+                        <span>Giao hàng tiết kiệm</span>
+                     </div>
+                     <div class="order-type">
+                        <input
+                           class="form-input"
+                           type="radio"
+                           name="order-type"
+                           value="quick"
+                        />
+                        <span>Giao hàng nhanh</span>
+                     </div>
+                     <div class="order-type">
+                        <input
+                           class="form-input"
+                           type="radio"
+                           name="order-type"
+                           value="normal"
+                        />
+                        <span>Bình thường</span>
+                     </div>
+                     <br />
+                     <span class="message-error"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="">
+                        <h4>Địa chỉ giao hàng</h4>
+                     </label>
+                     <input class="form-input" type="text" name="address" />
+                     <br />
+                     <span class="message-error"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="">
+                        <h4>Tên người nhận</h4>
+                     </label>
+                     <input class="form-input" type="text" name="name" />
+                     <br />
+                     <span class="message-error"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="">
+                        <h4>Số điện thoại</h4>
+                     </label>
+                     <input class="form-input" type="text" name="phone" />
+                     <br />
+                     <span class="message-error"></span>
+                  </div>
+                  <div class="submit"><button>ĐẶT MUA</button></div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <footer class="footer_class" id="footer">
+         <div class="grid">
+            <div class="footer__body">
+                <div class="grid__row">
+                    <div class="grid__column-6">
+                        <div class="footer__left">
+                            <h3 class="footer__left-heading">
+                                <img src="./img/logo/logofooter.png" class="footer__left-heading-img" alt="">
+                            </h3>
+                            <P class="footer__left-content">
+                                TechW là cửa hàng chuyên cung cấp những mẫu điện thoại giá rẻ và chất lượng tốt, chúng tôi cam kết bán hàng chính hãng, đảm bảo yêu cầu của người tiêu dùng.  
+                            </P>
+                            <h3 class="footer-address">Địa chỉ</h3>
+                            <p class="footer-address__text">
+                                <i class="fas fa-home"></i>
+                                128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer__main">
+                        <div class="footer__center">
+                            <h3 class="footer__center-heading">THÔNG TIN LIÊN HỆ</h3>
+                            <ul class="footer__center-content">
+                                <li class="footer__center-item ">
+                                    Tư vấn mua hàng
+                                </li>
+                                <li class="footer__center-item">
+                                    <i class="footer__center-icon fas fa-phone"></i>
+                                    1800 6601
+                                </li>
+                                <li class="footer__center-item ">
+                                    Hỗ trợ kỹ thuật
+                                <li class=" footer__center-item ">
+                                    <i class="footer__center-icon fas fa-phone"></i>
+                                    1800 1606
+                                </li>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="footer__center-corp">
+                            <h3 class="footer__center__corp-heading">WEBSITE CÙNG TẬP ĐOÀN</h3>
+                            <ul class="footer__center__corp-content">
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon fab fa-buy-n-large"></i>
+                                    Buy n Large
+                                </li>
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon footer__center__corp-item-left fab fa-amazon"></i>
+                                    Amazon
+                                </li>
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon fab fa-ebay"></i>
+                                    Ebay
+                                </li>
+                            </ul>
+                        </div>                                                     
+                    <div class="footer__right">
+                        <h3 class="footer__right-heading">THEO DÕI</h3>
+                        <ul class="footer__right-content">
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-facebook"></i>
+                                Facebook
+                            </li>
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-instagram"></i>
+                                Instagram
+                            </li>
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-github"></i>
+                                Github
+                            </li>
+                        </ul>
+                    </div>
+                    </div>               
+                </div> 
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__text">© 2021 - Made by Team with Love 💖.</p>
+        </div>
+
+      </footer>
+      <script src="./src/order.js"></script>
+   </body>
+</html>
