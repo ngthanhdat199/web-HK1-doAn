@@ -1,0 +1,149 @@
+.content {
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   background: #eee;
+   margin-top: 130px;
+}
+
+.content > p {
+   margin-top: 12px;
+   background: #b6cbd7;
+   text-align: center;
+   border-radius: 4px;
+   padding: 4px 10px;
+}
+
+.content-container {
+   width: 52%;
+   background: #fff;
+   margin: 20px 0px;
+   padding: 20px;
+}
+
+.content-container-body h3,
+.content-container-header h3 {
+   text-align: center;
+   margin: 10px;
+   color: #eb7832;
+   font-size: 28px;
+}
+
+.content-container-header ul {
+   overflow-y: scroll;
+}
+
+.content-container-header li {
+   margin-top: 6px;
+   border-radius: 6px;
+   padding: 10px 4px;
+   border: 1px solid #51cbff;
+   list-style: none;
+}
+
+.content-container-header li > * {
+   display: inline-block;
+   width: 32.3333%;
+}
+
+.content-container-header li .info > * {
+   display: inline-block;
+}
+
+.content-container-header li img {
+   border-radius: 2px;
+   height: 60px;
+}
+
+.content-container-body,
+.content-container-header {
+   min-height: 230px;
+   position: relative;
+   border: 2px solid #eee;
+   padding: 10px 20px;
+}
+
+.content-container-header h4 {
+   font-size: 20px;
+   bottom: 4px;
+   position: absolute;
+   color: #c93f3d;
+}
+
+.content-container-body {
+   margin-top: 10px;
+}
+
+.content-container-body input {
+   border-radius: 4px;
+   border: #51cbff 2px solid;
+   padding: 4px;
+   margin: 0 0 8px 6px;
+   margin-top: 4px;
+}
+
+.content-container-body input[type="text"] {
+   width: 40%;
+}
+
+.content-container-body input:focus {
+   border: #eb7832 1px solid;
+   outline: #eb7832 1px solid;
+}
+
+.content-container-body input:focus[type="radio"] {
+   color: #ffb70f;
+   background: #ffb70f;
+   border: #ffb70f 2px solid;
+   outline: none;
+}
+
+.content-container-body h4 {
+   margin: 12px 0 6px 0;
+}
+
+.content-container-body .order-type {
+   display: inline-block;
+   background: #c93f3d;
+   padding: 6px 10px 6px 6px;
+   border-radius: 4px;
+   margin-top: 12px;
+   color: #fff;
+}
+
+.content-container-body button {
+   background: #eb7832;
+   border: none;
+   color: #fff;
+   padding: 10px 40px;
+   border-radius: 6px;
+   font-size: 20px;
+   margin: auto;
+}
+
+.content-container-body button:hover {
+   background: #c93f3d;
+   cursor: pointer;
+}
+
+.content-container-body .submit {
+   padding: 12px 0 6px 0;
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+.invalid {
+   border: 1px solid #f10 !important;
+}
+
+.message-error {
+   padding-top: 2px;
+   font-size: 14px;
+   color: #f10;
+}
+
+.message-error i {
+   padding-right: 6px;
+}
+

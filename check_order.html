@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Quicksand&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/Style.css" />
+      <link rel="stylesheet" href="./css/responsive.css" />
+      <link
+         rel="stylesheet"
+         href="./img/fontawesome-free-5.12.1-web/css/all.css"
+      />
+      <link rel="SHORTCUT ICON" href="./img/logo/logo.png" />
+      <title>TechW</title>
+      <script src="./src/validator.js"></script>
+      <link rel="stylesheet" href="./css/pro_inf.css" />
+   </head>
+
+   <body>
+      <header>
+         <div class="nav">
+            <ul class="nav-list">
+               <li><a href="./index.html">Trang chủ</a></li>
+               <i class="fas fa-chevron-down"></i>
+               <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+               <li><a href="#footer">Liên Hệ</a></li>
+            </ul>
+            <div class="login-register">
+               <a href="#" class="js-login">Đăng Nhập</a>|<a
+                  href="#"
+                  class="js-register"
+                  >Đăng Ký</a
+               >
+            </div>
+         </div>
+         <div class="sub-header">
+            <a href="">
+               <img
+                  src="./img/logo/logo.png"
+                  alt="logotrang"
+                  style="width: 110px; height: 84px;"
+               />
+            </a>
+            <span class="sign">TECHW</span>
+            <i class="slogan"
+               >Mua sắm thả ga! Sale hết ăn tết!</i
+            >
+         </div>
+         <div class="nav-content">
+            <ul class="nav-content-list">
+               <li><a href="#" typeproduct="Iphone">Iphone</a></li>
+               <li><a href="#" typeproduct="Samsung">Samsung</a></li>
+               <li><a href="#" typeproduct="Vivo">Vivo</a></li>
+               <li><a href="#" typeproduct="Realme">Realme</a></li>
+               <li><a href="#" typeproduct="OPPO">OPPO</a></li>
+            </ul>
+            <div class="search">
+               <input
+                  class="search-ip"
+                  type="text"
+                  placeholder="Bạn muốn mua gì ?"
+               />
+               <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="cart-icon">
+               <a href="#" onclick="openModal($('.cart'))">
+                  Giỏ Hàng
+                  <i class="fas fa-shopping-cart"></i>
+               </a>
+            </div>
+         </div>
+      </header>
+      <div class="content">
+         <div class="content-container">
+            <div class="user-boxes">
+               <div class="recent-user box" style="width: 70vw">
+                  <div class="user-details">
+                     <ul class="details">
+                        <li class="topic">ID</li>
+                     </ul>
+                     <ul class="details">
+                        <li class="topic">Tên sản phẩm</li>
+                     </ul>
+
+                     <ul class="details">
+                        <li class="topic">Giá</li>
+                     </ul>
+                     <ul class="details">
+                        <li class="topic">Thời gian đặt hàng</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer_class" id="footer">
+         <div class="grid">
+            <div class="footer__body">
+                <div class="grid__row">
+                    <div class="grid__column-6">
+                        <div class="footer__left">
+                            <h3 class="footer__left-heading">
+                                <img src="./img/logo/logofooter.png" class="footer__left-heading-img" alt="">
+                            </h3>
+                            <P class="footer__left-content">
+                                TechW là cửa hàng chuyên cung cấp những mẫu điện thoại giá rẻ và chất lượng tốt, chúng tôi cam kết bán hàng chính hãng, đảm bảo yêu cầu của người tiêu dùng.  
+                            </P>
+                            <h3 class="footer-address">Địa chỉ</h3>
+                            <p class="footer-address__text">
+                                <i class="fas fa-home"></i>
+                                128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer__main">
+                        <div class="footer__center">
+                            <h3 class="footer__center-heading">THÔNG TIN LIÊN HỆ</h3>
+                            <ul class="footer__center-content">
+                                <li class="footer__center-item ">
+                                    Tư vấn mua hàng
+                                </li>
+                                <li class="footer__center-item">
+                                    <i class="footer__center-icon fas fa-phone"></i>
+                                    1800 6601
+                                </li>
+                                <li class="footer__center-item ">
+                                    Hỗ trợ kỹ thuật
+                                <li class=" footer__center-item ">
+                                    <i class="footer__center-icon fas fa-phone"></i>
+                                    1800 1606
+                                </li>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="footer__center-corp">
+                            <h3 class="footer__center__corp-heading">WEBSITE CÙNG TẬP ĐOÀN</h3>
+                            <ul class="footer__center__corp-content">
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon fab fa-buy-n-large"></i>
+                                    Buy n Large
+                                </li>
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon footer__center__corp-item-left fab fa-amazon"></i>
+                                    Amazon
+                                </li>
+                                <li class="footer__center__corp-item ">
+                                    <i class="footer__center__corp-icon fab fa-ebay"></i>
+                                    Ebay
+                                </li>
+                            </ul>
+                        </div>                                                     
+                    <div class="footer__right">
+                        <h3 class="footer__right-heading">THEO DÕI</h3>
+                        <ul class="footer__right-content">
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-facebook"></i>
+                                Facebook
+                            </li>
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-instagram"></i>
+                                Instagram
+                            </li>
+                            <li class="footer__right-item">
+                                <i class="footer__right-icon footer-item_icon fab fa-github"></i>
+                                Github
+                            </li>
+                        </ul>
+                    </div>
+                    </div>               
+                </div> 
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__text">© 2021 - Made by Team with Love 💖.</p>
+        </div>
+
+      </footer>
+      <div class="modal">
+         <div class="modal-form"></div>
+      </div>
+
+      <div class="cart">
+         <div class="modal-cart">
+            <div class="cart-head">
+               <h3>Giỏ hàng</h3>
+               <i class="fas fa-times" onclick="closeModal($('.cart'))"></i>
+            </div>
+            <div class="cart-body">
+               <div class="sub-cart">
+                  <p>Thông tin sản phẩm</p>
+                  <p>Giá tiền</p>
+                  <p>Số lượng</p>
+                  <p>Tổng</p>
+               </div>
+               <ul class="cart-list"></ul>
+            </div>
+            <div class="cart-footer">
+               <div class="total-price-cart">
+                  <span>Tổng :</span> <span class="total-price">0 đ</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         const $ = document.querySelector.bind(document);
+         const $$ = document.querySelectorAll.bind(document);
+         function closeModal(modalElement) {
+            modalElement.classList.remove("open");
+         }
+
+         function openModal(modalElement) {
+            modalElement.classList.add("open");
+         }
+
+         let loginUser = JSON.parse(localStorage.getItem("loginUser"));
+         let orders = localStorage.getItem("order")
+            ? JSON.parse(localStorage.getItem("order"))
+            : [];
+
+         function logout() {
+            loginUser = null;
+            localStorage.setItem("loginUser", JSON.stringify(loginUser));
+         }
+
+         let Total = 0;
+         function render() {
+            if (loginUser) {
+               $(".nav .login-register").innerHTML = `<div class="user-login">
+                     <p>Xin chào ${loginUser.email}</p>
+                     <a href="./index.html" id="logout" onclick="logout()">Đăng xuất</a>
+                     <a href="./check_order.html" id="logout">Xem đơn hàng</a>
+                  </div>`;
+            }
+         }
+
+         let index = 1;
+         let idHTML = ``;
+         let productHTML = ``;
+         let priceHTML = ``;
+         let dateHTML = ``;
+         let statusHTML = ``;
+         let productOrder = [];
+         for (let item of orders) {
+            if (item.email === loginUser.email) {
+               productOrder.push(item.products);
+               idHTML += `<li>${index++}</li>`;
+               productHTML += `<li><a href="#" class="btn__showitem" index="${
+                  index - 2
+               }">Xem sản phẩm</a></li>`;
+               priceHTML += `<li>${item.totalPrice}đ</li>`;
+               dateHTML += `<li>${item.date}</li>`;
+               if (item.isDelivered) {
+                  statusHTML += "<li>Đã giao hàng</li>";
+               } else {
+                  statusHTML += "<li>Đang xử lí</li>";
+               }
+            }
+         }
+
+         $(".user-details").innerHTML = `<ul class="details">
+                        <li class="topic">ID</li>
+                        <li>${idHTML}</li>
+                     </ul>
+                     <ul class="details">
+                        <li class="topic">Tên sản phẩm</li>
+                        <li>${productHTML}</li>
+                     </ul>
+
+                     <ul class="details">
+                        <li class="topic">Giá</li>
+                        <li>${currency(priceHTML)}</li>
+                     </ul>
+                     <ul class="details">
+                        <li class="topic">Thời gian đặt hàng</li>
+                        <li>${dateHTML}</li>
+                     </ul>
+                     <ul class="details">
+                        <li class="topic">Tình trạng đơn hàng</li>
+                        ${statusHTML}
+                     </ul>`;
+
+         render();
+
+         let showBtns = $$(".btn__showitem");
+         console.log(showBtns);
+         for (let btn of showBtns) {
+            btn.addEventListener("click", () => {
+               openModal($(".cart"));
+               let index = btn.getAttribute("index");
+               renderCart(productOrder[index]);
+            });
+         }
+         function currency(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+         }
+         function renderCart(cart) {
+            let cartHtml = ``;
+            let Total = 0;
+            cart.forEach((item) => (Total += item.count * item.price));
+
+            for (let item of cart) {
+               cartHtml += `<li>
+                  <div class="info"><img src="${item.img}" alt="img">
+                     <p class="order-name" >${item.name}</p>
+                  </div>
+                  <p class="p">${currency(item.price)}</p>
+                  <div class="quantity">
+                     <input type="text" value="${item.count}">
+                  </div>
+                  <p class="total-price-product">${
+                     currency(item.price * item.count)
+                  }</p>
+               </li>`;
+            }
+
+            $(".cart-list").innerHTML = cartHtml;
+            $(".total-price").innerHTML = `${currency(Total)}`;
+         }
+      </script>
+   </body>
+</html>
